@@ -4,7 +4,7 @@ export const checkKeywords = (
 ): { assignees: string[] }[] | null => {
   console.log('issue content:', content);
 
-  let matchingKeywords: { keywords: string[], labels: string[], assignees: string[] }[] = [];
+  let matchingKeywords: { assignees: string[] }[] = [];
 
   parameters.forEach(obj => {
     return obj.keywords.forEach(keyword => {
