@@ -1,7 +1,7 @@
 export const checkKeywords = (
-  parameters: { keywords: string[], labels: string[], assignees: string[] }[],
+  parameters: { assignees: string[] }[],
   content: string
-): { keywords: string[], labels: string[], assignees: string[] }[] | null => {
+): { assignees: string[] }[] | null => {
   console.log('issue content:', content);
 
   let matchingKeywords: { keywords: string[], labels: string[], assignees: string[] }[] = [];
